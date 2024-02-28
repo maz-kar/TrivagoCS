@@ -1,5 +1,5 @@
 //
-//  BaseButtonView.swift
+//  BrandButtonView.swift
 //  TrivagoCS
 //
 //  Created by Maziar Layeghkar on 28.02.24.
@@ -86,6 +86,9 @@ struct BrandButton: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     .frame(width: size == .medium ? 120 : 150, height: 20)
+                    .background(
+                        BrandButtonAnimationView(animate: $isPressed)
+                    )
 
                 
                 if let trailingIcon = trailingIcon {
