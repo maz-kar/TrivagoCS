@@ -52,6 +52,9 @@ Only secondary buttons will get "RoundedRectangle" around themselves as shown in
 Disabled Button:
 At the time of instantiation, the "isEnabled" property can be set to false which means the button is not pressable anymore.
 
+Full-width Button:
+At the time of instantiation, the "fullWidth" property can be set to true which means the width of the button will be infinity.
+
 ### Testing:
 For testing purposes, three sets of "BrandButtons" have already been created in the ContentView which can be seen in the below Demo section. As the intention was to show all the possibilities in horizontal order, the best experience will be to orient your device or simulator to landscape mode.
 
