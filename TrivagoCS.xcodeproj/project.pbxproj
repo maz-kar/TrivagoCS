@@ -11,6 +11,7 @@
 		6B72121C2B8F6305005D0BC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B72121B2B8F6305005D0BC9 /* ContentView.swift */; };
 		6B72121E2B8F6306005D0BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B72121D2B8F6306005D0BC9 /* Assets.xcassets */; };
 		6B7212212B8F6306005D0BC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B7212202B8F6306005D0BC9 /* Preview Assets.xcassets */; };
+		6B7212292B8F63DB005D0BC9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7212282B8F63DB005D0BC9 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6B72121B2B8F6305005D0BC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B72121D2B8F6306005D0BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B7212202B8F6306005D0BC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B7212282B8F63DB005D0BC9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		6B72120D2B8F6305005D0BC9 = {
 			isa = PBXGroup;
 			children = (
+				6B7212272B8F63CC005D0BC9 /* Extensions */,
 				6B7212182B8F6305005D0BC9 /* TrivagoCS */,
 				6B7212172B8F6305005D0BC9 /* Products */,
 			);
@@ -65,6 +68,14 @@
 				6B7212202B8F6306005D0BC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B7212272B8F63CC005D0BC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B7212282B8F63DB005D0BC9 /* Colors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B72121C2B8F6305005D0BC9 /* ContentView.swift in Sources */,
+				6B7212292B8F63DB005D0BC9 /* Colors.swift in Sources */,
 				6B72121A2B8F6305005D0BC9 /* TrivagoCSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
