@@ -107,6 +107,7 @@ struct BrandButton: View {
                     .foregroundStyle(foregroundColor)
             )
         }
+        .withPressableStyle(scaleAmount: 0.9)
         .disabled(!isEnabled)
     }
 }
