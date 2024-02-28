@@ -89,7 +89,6 @@ struct BrandButton: View {
                     .background(
                         BrandButtonAnimationView(animate: $isPressed)
                     )
-
                 
                 if let trailingIcon = trailingIcon {
                     trailingIcon
