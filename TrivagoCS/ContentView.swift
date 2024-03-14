@@ -12,25 +12,19 @@ struct ContentView: View {
         //MARK: Primary usage set
         VStack {
             HStack {
-                BrandButton(label: "Primary Default", variant: .primaryGreen)
-                
-                BrandButton(label: "Primary Default", variant: .primaryBlue)
-                
-                BrandButton(label: "Primary Default", variant: .primaryDisabled, isEnabled: false)
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryGreen))
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryBlue))
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryDisabled, isEnabled: false))
             }
             HStack {
-                BrandButton(label: "Primary Default", variant: .primaryGreen, leadingIcon: Image(systemName: "square.fill"))
-                
-                BrandButton(label: "Primary Default", variant: .primaryBlue, leadingIcon: Image(systemName: "square.fill"))
-                
-                BrandButton(label: "Primary Disabled", variant: .primaryDisabled, leadingIcon: Image(systemName: "square.fill"), isEnabled: false)
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryGreen, leadingIcon: Image(systemName: "square.fill")))
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryBlue, leadingIcon: Image(systemName: "square.fill")))
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Disabled", variant: .primaryDisabled, leadingIcon: Image(systemName: "square.fill"), isEnabled: false))
             }
             HStack {
-                BrandButton(label: "Primary Default", variant: .primaryGreen, trailingIcon: Image(systemName: "square.fill"))
-                
-                BrandButton(label: "Primary Default", variant: .primaryBlue, trailingIcon: Image(systemName: "square.fill"))
-                
-                BrandButton(label: "Primary Disabled", variant: .primaryDisabled, trailingIcon: Image(systemName: "square.fill"), isEnabled: false)
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryGreen, trailingIcon: Image(systemName: "square.fill")))
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryBlue, trailingIcon: Image(systemName: "square.fill")))
+                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Disabled", variant: .primaryDisabled, trailingIcon: Image(systemName: "square.fill"), isEnabled: false))
             }
         }
         //MARK: Secondary usage set

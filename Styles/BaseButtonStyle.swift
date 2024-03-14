@@ -25,12 +25,12 @@ struct BaseButtonStyle {
     }
     
     var variant: Variant
-    var size: Size
+    var size: Size = .regular
     
-    init(variant: Variant, size: Size = .regular) {
-        self.variant = variant
-        self.size = size
-    }
+//    init(variant: Variant, size: Size = .regular) {
+//        self.variant = variant
+//        self.size = size
+//    }
 }
 
 struct PressableBrandButtonStyle: ButtonStyle {
