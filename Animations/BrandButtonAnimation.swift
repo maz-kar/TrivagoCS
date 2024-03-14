@@ -17,6 +17,12 @@ struct BrandButtonAnimationView: View {
             .stroke(lineWidth: 2.0)
             .scale(animate ? 1.0 : 0.0)
             .opacity(animate ? 0.0 : 1.0)
-            .animation(.easeInOut(duration: 2.0), value: animate)
+            .animation(.easeInOut(duration: 3.0), value: animate)
     }
 }
+
+//#Preview {
+//    BrandButtonAnimationView(animate: .constant(false))
+//        .foregroundStyle(Color.red)
+//        .frame(width: 150, height: 150)
+//}

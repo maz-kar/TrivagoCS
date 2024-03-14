@@ -26,9 +26,6 @@ struct BrandButton: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     .frame(width: viewModel.size == .medium ? 120 : 150, height: 20)
-                    .background(
-                        BrandButtonAnimationView(animate: $isPressed)
-                    )
                 
                 if let trailingIcon = viewModel.trailingIcon {
                     trailingIcon
@@ -36,14 +33,19 @@ struct BrandButton: View {
                 }
             }
             .padding()
-            .frame(maxWidth: viewModel.fullWidth == true ? .infinity : nil)
+            .frame(maxWidth: viewModel.fullWidth ? .infinity : nil)
             .background(viewModel.backgroundColor(isPressed: isPressed))
             .foregroundColor(viewModel.foregroundColor(isPressed: isPressed))
             .cornerRadius(viewModel.size == .medium ? 12 : 8)
             .overlay(
                 RoundedRectangle(cornerRadius: viewModel.size == .medium ? 12 : 8)
                     .stroke(lineWidth: viewModel.variant == .secondaryGreen || viewModel.variant == .secondaryBlue || viewModel.variant == .secondaryDisabled ? 1 : 0)
+                    .background(
+                        BrandButtonAnimationView(animate: $isPressed)
+                            .frame(width: 200, height: 50)
+                    )
                     .foregroundStyle(viewModel.foregroundColor(isPressed: isPressed))
+
             )
         }
         .withPressableStyle(scaleAmount: 0.9)
