@@ -17,7 +17,6 @@ class BrandButtonViewModel: ObservableObject {
     var fullWidth: Bool
     var isEnabled: Bool
     var size: BaseButtonStyle.Size
-    @State var isPressed = false
     
     init(label: LocalizedStringKey = "Primary Default", variant: BaseButtonStyle.Variant = .primaryGreen, leadingIcon: Image? = nil, trailingIcon: Image? = nil, fullWidth: Bool = false, isEnabled: Bool = true, size: BaseButtonStyle.Size = .regular) {
         self.label = label
