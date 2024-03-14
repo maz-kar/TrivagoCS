@@ -30,21 +30,21 @@ struct ContentView: View {
         //MARK: Secondary usage set
                 VStack {
                     HStack {
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryGreen))
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryBlue))
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Disabled", variant: .secondaryDisabled, isEnabled: false))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryGreen))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryBlue))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Disabled", variant: .secondaryDisabled, isEnabled: false))
                     }
                     
                     HStack {
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryGreen, leadingIcon: Image(systemName: "square.fill")))
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryBlue, leadingIcon: Image(systemName: "square.fill")))
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Disabled", variant: .secondaryDisabled, leadingIcon: Image(systemName: "square.fill"), isEnabled: false))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryGreen, leadingIcon: Image(systemName: "square.fill")))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryBlue, leadingIcon: Image(systemName: "square.fill")))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Disabled", variant: .secondaryDisabled, leadingIcon: Image(systemName: "square.fill"), isEnabled: false))
                     }
                     
                     HStack {
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryGreen, trailingIcon: Image(systemName: "square.fill")))
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryBlue, trailingIcon: Image(systemName: "square.fill")))
-                        BrandButton(viewModel: BrandButtonViewModel(label: "Secondary Disabled", variant: .secondaryDisabled, trailingIcon: Image(systemName: "square.fill"), isEnabled: false))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryGreen, trailingIcon: Image(systemName: "square.fill")))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Default", variant: .secondaryBlue, trailingIcon: Image(systemName: "square.fill")))
+                        BrandButtonView(viewModel: BrandButtonViewModel(label: "Secondary Disabled", variant: .secondaryDisabled, trailingIcon: Image(systemName: "square.fill"), isEnabled: false))
                     }
                 }
         

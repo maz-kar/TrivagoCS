@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BrandButton: View {
+struct BrandButtonView: View {
     @StateObject var viewModel = BrandButtonViewModel()
     @State private var isPressed = false
 
@@ -36,7 +36,6 @@ struct BrandButton: View {
             .frame(maxWidth: viewModel.fullWidth ? .infinity : nil)
             .background(viewModel.backgroundColor(isPressed: isPressed))
             .foregroundColor(viewModel.foregroundColor(isPressed: isPressed))
-            .cornerRadius(viewModel.size == .medium ? 12 : 8)
             .overlay(
                 RoundedRectangle(cornerRadius: viewModel.size == .medium ? 12 : 8)
                     .stroke(lineWidth: viewModel.variant == .secondaryGreen || viewModel.variant == .secondaryBlue || viewModel.variant == .secondaryDisabled ? 1 : 0)
@@ -45,7 +44,6 @@ struct BrandButton: View {
                             .frame(width: 200, height: 50)
                     )
                     .foregroundStyle(viewModel.foregroundColor(isPressed: isPressed))
-
             )
         }
         .withPressableStyle(scaleAmount: 0.9)
@@ -54,5 +52,6 @@ struct BrandButton: View {
 }
 
 #Preview {
-    BrandButton(viewModel: BrandButtonViewModel(label: "Base button", variant: .baseButton, leadingIcon: Image(systemName: "square.fill"), trailingIcon: Image(systemName: "square.fill"), isEnabled: false))
+    BrandButtonView(viewModel: BrandButtonViewModel(label: "Base button", variant: .baseButton, leadingIcon: Image(systemName: "square.fill"), trailingIcon: Image(systemName: "square.fill"), isEnabled: false))
+        .cornerRadius(8)
 }
