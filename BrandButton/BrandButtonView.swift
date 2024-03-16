@@ -41,12 +41,12 @@ struct BrandButtonView: View {
                     .stroke(lineWidth: viewModel.variant == .secondaryGreen || viewModel.variant == .secondaryBlue || viewModel.variant == .secondaryDisabled ? 1 : 0)
                     .background(
                         BrandButtonAnimationView(animate: $isPressed)
-                            .frame(width: 200, height: 50)
+                            .frame(width: 180, height: 50)
                     )
                     .foregroundStyle(viewModel.foregroundColor(isPressed: isPressed))
             )
         }
-        .withPressableStyle(scaleAmount: 0.9)
+        .withPressableStyle(scaleAmount: 1.2)
         .disabled(!viewModel.isEnabled)
     }
 }

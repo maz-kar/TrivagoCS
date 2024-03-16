@@ -23,19 +23,11 @@ struct BaseButtonStyle {
         case regular
         case medium
     }
-    
-    var variant: Variant
-    var size: Size = .regular
-    
 }
 
 struct PressableBrandButtonStyle: ButtonStyle {
     
     let scaleAmount: CGFloat
-    
-    init(scaleAmount: CGFloat) {
-        self.scaleAmount = scaleAmount
-    }
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label

@@ -20,9 +20,3 @@ struct BrandButtonAnimationView: View {
             .animation(.easeInOut(duration: 3.0), value: animate)
     }
 }
-
-//#Preview {
-//    BrandButtonAnimationView(animate: .constant(false))
-//        .foregroundStyle(Color.red)
-//        .frame(width: 150, height: 150)
-//}
