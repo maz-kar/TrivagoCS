@@ -46,7 +46,7 @@ struct BrandButtonView: View {
                     .foregroundStyle(viewModel.foregroundColor(isPressed: isPressed))
             )
         }
-        .withPressableStyle(scaleAmount: 1.2)
+        .withPressableStyle(scaleAmount: 0.9)
         .disabled(!viewModel.isEnabled)
     }
 }
