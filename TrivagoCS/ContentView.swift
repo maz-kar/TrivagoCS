@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //MARK: Primary usage set
 //        VStack {
 //            HStack {
 //                BrandButton(viewModel: BrandButtonViewModel(label: "Primary Default", variant: .primaryGreen))
